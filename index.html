@@ -1,34 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./index.js"></script>
-    <title>Tejash|Software Developer</title>
-    <meta name="description" content="my personal portfolio, to showcase my work and projects.">
-  </head>
-  <body>
-     <header id="nav-header">(W.I.P.) I'm currently being built...</header>
-     <nav id="navbar">
-      <ul>
-        <li><a class="nav-link" href="#Home">Home</a></li>
-        <li><a class="nav-link" href="#About_Me">About Me</a></li>
-        <li><a class="nav-link" href="#Portfolio">Portfolio</a></li>
-        <li><a class="nav-link" href="#Skills">Skills</a></li>
-        <li><a class="nav-link" href="#Blog">Blog</a></li>
-        <li><a class="nav-link" href="#Contact">Contact</a></li>
-        <li><a class="nav-link" href="#Resume">Resume</a></li>   
-      </ul>
-    </nav>
-    <main>
-      <section id="Home"><h1>Home</h1></section>
-      <section id="About_Me"><h1>About Me</h1></section>
-      <section id="Portfolio"><h1>Portfolio</h1></section>
-      <section id="Skills"><h1>Skills</h1></section>
-      <section id="Blog"><h1>Blog</h1></section>
-      <section id="Contact"><h1>Contact<h1></section>
-      <section id="Resume"><h1>Resume</h1></section>
-    </main>
-   </body>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
+  <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Tejash | Software Engineer</title>
+  <meta name="description" content="my personal portfolio, to showcase my work and projects.">
+  <!--Boostrap Icons CDN-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav data-bs-theme="dark" class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid flex-lg-column">
+      <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+        <span class="h3 fw-bold d-block d-lg-none">Tejash Patel</span>
+        <img src="./assets/images/turtle400.jpg" class="avatar d-none d-lg-block rounded-circle" alt="avatar">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cv-resume">CV/Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="content-wrapper">
+    <section class="main-section full-height px-lg-5" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-5">I'm a Software Engineer, from in London. Currently working at ________.</h1>
+            <p>Experienced in web development (HTML, CSS & JavaScript), SQL, Java and Python.</p>
+            <p>Read more <a href="#about" class="fw-bolder">about me</a> and check out my <a href="#portfolio" class="fw-bolder">portfolio</a>.</p>
+            <h2 class="display-3">Lets get to work...</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-section full-height" id="about">
+      <h1>About</h1>
+    </section>
+    <section class="main-section full-height" id="portfolio">
+      <h1>Portfolio</h1>
+    </section>
+    <section class="main-section full-height" id="skills">
+      <h1>Skills</h1>
+    </section>
+    <section class="main-section full-height" id="blog">
+      <h1>Blog</h1>
+    </section>
+    <section class="main-section full-height" id="cv-resume">
+      <h1>CV/Resume</h1>
+    </section>
+    <section class="main-section full-height" id="contact">
+      <h1>Contact<h1>
+    </section>
+  </div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
