@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 :root {
-    --color-body: #21bcef;
-    --color-heading: #7878d2;
+    --color-body: #0FC2C0;
+    --color-heading: #0CABA8;
     --color-text: #fdfdfd; 
-    --color-base: #2c2c4b;
-    --color-base2: #2f2e38;
-    --color-brand: #7165f9;
+    --color-base: #015958;
+    --color-base2: #023535;
+    --color-brand: #4a4a4d;
     --color-brand2: #290d74;
     --font-base: "Roboto";
     --sidebar-width: 250px;
