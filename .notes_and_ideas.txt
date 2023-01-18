@@ -1,8 +1,0 @@
-____________________________________________________________
-- "I'm a Software Engineer, located in London. Currently working at ________"
-- "Experienced in web development (HTML, CSS & JavaScript), SQL, Java and Python."
-- "Read more #About_Me and check out my #Portfolio."
-- "... Lets get to work"
-____________________________________________________________
-- Read through the navbar section on bootstrap website, and follow the video too; dont just copy
-- The order of the <link> elements in the html file matter. My own styles.css needs to be imported last so the bootstrap css file doesnt overwrite it after.
