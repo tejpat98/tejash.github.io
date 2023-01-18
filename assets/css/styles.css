@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 :root {
-    --color-body: #0FC2C0;
-    --color-heading: #0CABA8;
+    --color-body: #021323;
+    --color-sidebar: #7c6aaf;
+    --color-heading: #0b8a8a;
     --color-text: #fdfdfd; 
+    --color-text-link-active: #395258; 
+    --color-text-link: #00d0ff; 
+    
     --color-base: #015958;
     --color-base2: #023535;
-    --color-brand: #4a4a4d;
+    --color-brand: #2d2d5f;
     --color-brand2: #290d74;
     --font-base: "Roboto";
     --sidebar-width: 250px;
 }
 body{
-    background-color: var(--color-base2);
-    color: var(--color-body);
+    background-color: var(--color-body);
+    color: var(--color-text);
     font-family: var(--font-base), sans-serif;
     scroll-behavior: smooth;
 }
@@ -25,11 +29,11 @@ p {
 }
 a{
     text-decoration: none;
-    color: var(--color-body);
+    color: var(--color-text-link);
     transition: all 0.5s ease;
 }
 a:hover{
-    color: var(--color-brand);
+    color: var(--color-text-link-active);
 
 }
 img{
@@ -55,7 +59,7 @@ img{
 }
 .nav-link{
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 50px;
     margin: 5px;
 }
 .navbar .nav-link{
@@ -64,13 +68,13 @@ img{
     color: white;
 }
 .navbar .nav-link:hover {
-    color: var(--color-brand)
+    color: var(--color-body)
 }
 @media (min-width: 992px){
     .navbar{
         min-height: 100vh;
         width: var(--sidebar-width);
-        background: var(--color-base);
+        background: var(--color-sidebar);
         background-size: cover;
         background-position: center;
     }
