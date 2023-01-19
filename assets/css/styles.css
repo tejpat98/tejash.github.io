@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 :root {
     --color-body: #021323;
-    --color-sidebar: #7c6aaf;
+    --color-sidebar: #5031a7;
     --color-heading: #0b8a8a;
     --color-text: #fdfdfd; 
-    --color-text-link-active: #395258; 
+    --color-text-link-active: #9da7a9; 
     --color-text-link: #00d0ff; 
     
     --color-base: #015958;
@@ -55,7 +55,7 @@ img{
     border-bottom: 1px solid var(--color-brand);
 }
 .navbar {
-    background-color: var(--color-base);
+    background-color: var(--color-sidebar);
 }
 .nav-link{
     border: 1px solid white;
@@ -88,12 +88,28 @@ img{
     #content-wrapper{
         padding-left: var(--sidebar-width);
     }
+    .la-github, .la-linkedin{
+        font-size: 3rem;
+    }
 }
 @media (max-width: 992px){
     /* CSS used for mobile */
     .nav-link{
         border: none;
         margin: 0px;
+        padding-left: 3rem;
     }
+    .la-github, .la-linkedin{
+        font-size: 4rem;
+        letter-spacing: 20px;
+        margin: 1rem;
+    }
+    /* .la-github::after{
+        content:"Github"
+    }
+    .la-linkedin::after{
+        content:"LinkedIn"
+    } */
+
 }
     
