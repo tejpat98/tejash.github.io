@@ -1,108 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 :root {
     --color-body: #021323;
     --color-sidebar: #5031a7;
-    --color-heading: #0b8a8a;
-    --color-text: #fdfdfd; 
-    --color-text-link-active: #9da7a9; 
-    --color-text-link: #00d0ff; 
-    
-    --color-base: #015958;
-    --color-base2: #023535;
+    --color-heading: #0e9d9d;
+    --color-text: #fdfdfd;
+    --color-text-link-active: #9da7a9;
+    --color-text-link: #00d0ff;
+
+    --color-base: #014f4d;
+    --color-base2: #013232;
     --color-brand: #2d2d5f;
     --color-brand2: #290d74;
     --font-base: "Roboto";
     --sidebar-width: 250px;
 }
-body{
+
+body {
     background-color: var(--color-body);
     color: var(--color-text);
     font-family: var(--font-base), sans-serif;
     scroll-behavior: smooth;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-heading {
     color: var(--color-heading);
     font-weight: 700;
 }
+
 p {
     color: var(--color-text);
 }
+
 a{
     text-decoration: none;
     color: var(--color-text-link);
     transition: all 0.5s ease;
 }
-a:hover{
+
+a:hover {
     color: var(--color-text-link-active);
 
 }
-img{
+.btn-primary{
+    background-color: var(--color-base);
+    border: none;
+    transition: all 0.5s ease;
+}
+.btn-primary:hover{
+    background-color: var(--color-base2);   
+}
+
+img {
     width: 100%;
 }
-#home{
-    display:flex;
+
+#home {
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 #home p {
     font-size: larger;
 }
-.full-height{
+
+.full-height {
     min-height: 100vh;
     height: 100%;
     padding-top: 75px;
     padding-bottom: 75px;
     border-bottom: 1px solid var(--color-brand);
 }
+
 .navbar {
     background-color: var(--color-sidebar);
 }
-.nav-link{
+
+.nav-link {
     border: 1px solid white;
     border-radius: 50px;
     margin: 5px;
 }
-.navbar .nav-link{
+
+.navbar .nav-link {
     font-weight: 500;
     text-transform: uppercase;
     color: white;
 }
+
 .navbar .nav-link:hover {
     color: var(--color-body)
 }
-@media (min-width: 992px){
-    .navbar{
+.card:hover {
+    background-color: var(--color-base);
+}
+
+.card {
+    background-color: var(--color-base2);
+    margin: 5px 0px;
+    transition: all 0.5s ease;
+}
+.date {
+    font-style: italic;
+    color: grey;
+    font-size: 12px;
+}
+
+/* -- Media queries to extend responsive design for different screen sizes. -- 
+    Bootstrap has some responsive elements built-in like the navbar
+    (min-width: 992px) is applied for larger devices
+    (max-width: 992px) is applied for  applied for smaller devices
+    * 992px is used as the breakpoint; as its the same breakpoint value used for the navbar (lg == 992px).
+    This allows the responsive design changes below and built-in ones from bootstrap to be applied together.*/
+@media (min-width: 992px) {
+    .navbar {
         min-height: 100vh;
         width: var(--sidebar-width);
         background: var(--color-sidebar);
         background-size: cover;
         background-position: center;
     }
-    .avatar{
+
+    .avatar {
         filter: blur(0.5px);
         width: 150px;
         height: 150px;
-        -webkit-transform: scaleX(-1);
         border: 5px solid var(--color-brand);
     }
-    #content-wrapper{
+
+    #content-wrapper {
         padding-left: var(--sidebar-width);
     }
-    .la-github, .la-linkedin{
+
+    .la-github,
+    .la-linkedin {
         font-size: 3rem;
     }
+    .card{
+        width: 80%;
+    }
 }
-@media (max-width: 992px){
+
+@media (max-width: 992px) {
+
     /* CSS used for mobile */
-    .nav-link{
+    .nav-link {
         border: none;
         margin: 0px;
         padding-left: 3rem;
     }
-    .la-github, .la-linkedin{
+
+    .la-github,
+    .la-linkedin {
         font-size: 4rem;
         letter-spacing: 20px;
         margin: 1rem;
     }
+    .card {
+        width: 95%;
+        margin: 5px;
+    }
 }
-    

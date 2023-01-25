@@ -18,9 +18,9 @@
   <!--Navigation bar-->
   <nav data-bs-theme="dark" class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid flex-lg-column">
-      <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+      <a class="navbar-brand mx-lg-auto mb-lg-4" href="#home">
         <span class="h3 fw-bold d-block d-lg-none">Tejash Patel</span>
-        <img src="./assets/images/turtle400.jpg" class="avatar d-none d-lg-block rounded-circle" alt="avatar">
+        <img src="./assets/images/avatar.png" class="avatar d-none d-lg-block rounded-circle" alt="avatar">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,28 +59,84 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <h1 class="display-5">I'm a Software Engineer, from in London. Currently working at ________.</h1>
-            <p class="mt-4">Experienced in web development (HTML, CSS, <i class="bi bi-bootstrap"></i> Bootstrap & JavaScript), SQL, <i class="lab la-java fs-3"></i>Java and <i class="lab la-python fs-3"></i>Python.</p>
-            <p class="mb-4">Read more <a href="#about" class="fw-bolder">about me</a> and check out my <a href="#portfolio" class="fw-bolder">portfolio</a>.</p>
-            <h2 class="display-3">Lets get to work...</h2>
+            <h1 class="display-5" data-aos="fade-right" data-aos-delay="200">I'm a Software Engineer, from London. Currently working at ________.</h1>
+            <p class="mt-4" data-aos="fade-right" data-aos-delay="300">Experienced in web development (HTML, CSS, <i class="bi bi-bootstrap"></i> Bootstrap & JavaScript), SQL, <i class="lab la-java fs-3"></i>Java and <i class="lab la-python fs-3"></i>Python.</p>
+            <p class="mb-4" data-aos="fade-right" data-aos-delay="600">Read more <a href="#about" class="fw-bolder">about me</a> and check out my <a href="#portfolio" class="fw-bolder">portfolio</a>.</p>
+            <h2 class="display-3" data-aos="fade-right"  data-aos-offset="-200" data-aos-delay="800" data-aos-duration="2000">Lets get to work...</h2>
           </div>
         </div>
       </div>
     </section>
     <section class="main-section full-height px-lg-5" id="about">
       <h1>About</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            123
+          </div>
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-heading"><i class="las la-university fs-3"></i> Brunel University</h5>
+                  <p class="card-subtitle">Computer Science BSc</p>
+                  <p class="card-text date"> 2018 - 2021</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-heading"><i class="lab la-free-code-camp fs-3"></i> freeCodeCamp</h5>
+                  <p class="card-subtitle">Responsive Web Design</p>
+                  <p class="card-text date">2022</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
-    <section class="main-section full-height" id="portfolio">
+    <section class="main-section full-height px-lg-5" id="portfolio">
       <h1>Portfolio</h1>
     </section>
-    <section class="main-section full-height" id="blog">
+    <section class="main-section full-height px-lg-5" id="blog">
       <h1>Blog</h1>
     </section>
-    <section class="main-section full-height" id="cv-resume">
+    <section class="main-section full-height px-lg-5" id="cv-resume">
       <h1>CV/Resume</h1>
     </section>
-    <section class="main-section full-height" id="contact">
+    <section class="main-section full-height px-lg-5" id="contact">
       <h1>Contact<h1>
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <h2>Lets talk...</h2>
+            </div>  
+            <div class="col-lg-8">
+              <form class="row g-lg-3 gy-3" action="#">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group col-12">
+                  <input type="text" class="form-control" placeholder="Enter subject" required>
+                </div>
+                <div class="form-group col-12">
+                  <textarea name="" rows="8" class="form-control" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="form-group col-12 d-grid">
+                  <button type="submit" class="btn btn-primary">Send</button>   
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
     </section>
   </div>
 
