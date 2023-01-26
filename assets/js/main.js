@@ -13,3 +13,25 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+function sendMail() {
+  var params = {
+    name: document.getElementById('conName').value,
+    email: document.getElementById('conEmail').value,
+    subject: document.getElementById('conSubject').value,
+    message: document.getElementById('conMessage').value
+  }
+
+  const serviceID = "service_x444bfq"
+  const templateID = "template_8f9yaai"
+
+  emailjs.send(serviceID, templateID, params).then(
+    (res) => {
+      document.getElementById('conName').value = "";
+      document.getElementById('conEmail').value = "";
+      document.getElementById('conSubject').value = "";
+      document.getElementById('conMessage').value = "";
+      console.log(res);
+      alert("Message sent successfully!");
+    })
+    .catch((err) => console.log(err));
+}
